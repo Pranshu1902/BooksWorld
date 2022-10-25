@@ -1,0 +1,4 @@
+{% extends "base.html" %} {% block body %} {% for book in books %}
+<p class="text-2xl text-red-500">{{book.name}}</p>
+<p>by {{book.author}}</p>
+{% endfor %} {% endblock %}

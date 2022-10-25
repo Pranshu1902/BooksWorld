@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block body %}
+<form method="post">
+  {{form.as_p}}
+  <button class="text-white bg-slate-700 hover:bg-slate-900 rounded-lg p-2">
+    Create
+  </button>
+  {% csrf_token %}
+</form>
+{% endblock %}
